@@ -1,0 +1,555 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+h1 {
+    font-size: calc(4vh + 3vw + 4px);
+}
+
+h2 {
+    font-size: calc(1vh + 1.5vw + 4px);
+}
+
+p {
+    font-size: calc(0.8vw + 5px);
+}
+
+a {
+    color: var(--c_a);
+}
+
+a:hover {
+    color: var(--c_a_hover);
+}
+
+/* Header */
+
+/* Nav */
+
+.nav-section {
+    background-color: var(--bg_nav);
+    text-align: center;
+    height: 70px;
+    font-size: calc(1vw + 10px);
+}
+
+.nav-container {
+    width: 70%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+.nav-items {
+    display: flex;
+}
+
+.nav-p {
+    display: none;
+}
+
+nav li {
+    width: calc(100vw / 5);
+    list-style-type: none;
+}
+
+nav a {
+    color: var(--c_nav);
+    text-decoration: none;
+}
+
+/* Intro */
+
+.intro-section {
+    height: calc(100vh - 70px);
+    min-height: 200px;
+}
+
+.intro-container {
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.intro-image {
+    height: 100%;
+    background-image: url("../img/01_home.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.intro-caption {
+    position: absolute;
+    right: 0;
+    bottom: 50px;
+    text-align: right;
+    color: var(--c_bright);
+}
+
+/* body */
+
+/* About us */
+
+.about-section {
+    height: 100%;
+    padding: 60px 0;
+}
+
+.about-container {
+    width: 70%;
+    margin: 0 auto;
+
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+}
+
+.about-img {
+    width: 50%;
+}
+
+.about-img img {
+    max-height: 300px;
+}
+
+.about-article {
+    width: 50%;
+}
+
+/* What we do */
+
+.what-section {
+    height: 100%;
+    padding: 60px 0;
+    background-color: var(--bg1_wwd);
+    color: var(--c_bright);
+    text-align: center;
+}
+
+.what-container {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.what-article {
+    margin: 0 auto;
+}
+
+.what-article p {
+    padding: 4% 0;
+}
+
+.what-icons-container {
+    margin: 5% auto 0;
+    display: flex;
+}
+
+.what-icon-card {
+    flex-grow: 1;
+}
+
+.what-hiking {
+    background-image: url(../icons/hiking.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    height: 10vw;
+    width: 100px;
+}
+
+.what-cycling {
+    background-image: url(../icons/cycle.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    height: 10vw;
+    width: 100px;
+}
+
+.what-surfing {
+    background-image: url(../icons/water.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    height: 10vw;
+    width: 100px;
+}
+
+.what-car {
+    background-image: url(../icons/car.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    margin: 0 auto;
+    height: 10vw;
+    width: 100px;
+}
+
+.what-text {
+    font-size: calc(1vw + 20px);
+    font-weight: bold;
+    padding-top: 40px;
+}
+
+/* Our Trips */
+
+.trips-section {
+    min-height: calc(50vh + 300px + 150px);
+    height: 100vh;
+    padding: 5% 0;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.trips-container {
+    height: 100%;
+}
+
+.trips-3obj-container {
+    display: flex;
+    text-align: center;
+    padding: 3px 0;
+    height: calc(50vh / 3 + 100px);
+    gap: 5px;
+}
+
+.trip-img-wraper {
+    width: calc(70vw / 3);
+}
+
+.trip-text-wraper {
+    position: relative;
+    width: calc(70vw / 3);
+    background-color: var(--bg4_bright);
+}
+
+.trip-text-wraper h2 {
+    position: absolute;
+    top: calc(50% - ((1vh + 2vw + 3px) / 2));
+    width: 100%;
+}
+
+/* Where do you whant to go */
+
+.where-section {
+    background-color: var(--bg2_wdy);
+    color: var(--c_bright);
+    height: 40vh;
+    min-height: 310px;
+    padding: 5% 0;
+}
+
+.where-article {
+    width: 70%;
+    margin: 0 auto;
+
+    text-align: left;
+    display: flex;
+    gap: 10%;
+}
+
+.where-title {
+    width: 30%;
+}
+
+.where-card {
+    width: 70%;
+}
+
+.where-card p {
+    padding-bottom: 20px;
+}
+
+.where-contact {
+    margin-top: 40px;
+}
+
+.where-contact {
+    background-color: var(--bg4_bright);
+    text-align: center;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+}
+
+.where-contact a {
+    color: var(--c_dark);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Reviews */
+
+.reviews-section {
+    text-align: center;
+    height: 100vh;
+    min-height: 700px;
+    padding: 3% 0;
+}
+
+.reviews-container {
+    width: 70%;
+    margin: 0 auto;
+
+    height: 100%;
+    position: relative;
+}
+
+.reviews-card-container {
+    display: flex;
+    gap: 5%;
+}
+
+.reviews-card,
+.reviews-article {
+    width: calc(100vw / 4);
+    margin: 30px auto;
+}
+
+.reviews-image-card {
+    width: 50%;
+}
+
+.reviews-img-wapper img {
+    width: 15vw;
+    height: 15vw;
+    border-radius: 50%;
+}
+
+.reviews-container p {
+    padding: 3vh 0;
+}
+
+/* End section */
+
+.end-section {
+    height: calc(100vh - 80px);
+    min-height: 300px;
+}
+
+.end-container {
+    height: 50%;
+    display: flex;
+}
+
+.end-img-wraper {
+    width: 50%;
+}
+
+/* Footer */
+
+footer {
+    text-align: center;
+    height: 100%;
+    padding: 20px;
+    background-color: var(--bg1_wwd);
+    color: var(--c_bright);
+}
+
+footer h6 {
+    font-size: 16px;
+}
+
+footer p {
+    padding: 10px;
+}
+
+@media (max-width:768px) {
+   
+    h1 {
+        font-size: calc(2vh + 5vw + 2px);
+    }
+
+    h2 {
+        font-size: calc(2vh + 4vw + 2px);
+        /*font-size: 42px;*/
+    }
+
+    p {
+        font-size: 16px;
+        margin: 40px 0;
+    }
+
+    .nav-container {
+        padding: 16px 0;
+        width: 85%;
+    }
+
+    .nav-items {
+        display: block;
+        text-align: right;
+    }
+
+    .nav-d {
+        display: none;
+    }
+
+    .nav-p {
+        display:block;
+        width: 100%;
+        font-size: 34px;
+    }
+
+
+    .intro-container {
+        width: 85%;
+    }
+
+    .about-container {
+        display: block;
+        width:85%;
+    }
+    .about-article {
+        width: 100%;
+    }
+    .about-img {
+        width: 100%;
+    }
+
+
+    .what-icons-container {
+        display: block;
+    }
+
+    .what-text {
+        padding-top: 20px;
+        font-weight: 500;
+    }
+
+    .what-icon-card {
+        margin: 50px 0;
+    }
+
+    .what-hiking {
+        height: 70px;
+    }
+    .what-cycling {
+        height: 70px;
+    }
+    .what-surfing {
+        height: 70px;       
+    }
+    .what-car {
+        height: 70px;
+    }
+
+
+    .trips-section {
+        height: 100%;
+        width: 85%;
+    }
+
+    .trips-3obj-container {
+        display: block;
+        height: 100%;
+    }
+    
+    .trip-img-wraper {
+        width: 100%;
+    }
+
+    .trip-text-wraper {
+        width: 100%;
+        height: 100px;
+    }
+ 
+    .trip-text-wraper h2 {
+        position: relative;
+        top: calc(50% - 42px/2);
+    }
+
+    .where-section {
+        height: 100%;
+        padding: 60px 0;
+    }
+    .where-article {
+        width: 85%;
+        display: block;
+    } 
+
+    .where-title {
+        width: 100%;
+    }
+
+    .where-card {
+        width: 100%;
+    }
+
+    .where-contact {
+        margin-top: 60px;
+        width: 100%;
+        max-width: 150px;
+    }
+
+    .where-contact a {
+        font-size: 14px;
+    }
+
+    .reviews-section {
+        height: 100%;
+        padding-top: 60px 0;
+    }
+
+    .reviews-container {
+        width: 85%;
+    }
+
+    .reviews-container p {
+        padding: 0;
+    }
+
+    .reviews-article {
+        width: 100%;
+    }
+
+    .reviews-card-container {
+        display: block;
+    }
+
+    .reviews-card {
+        width: 100%;
+        margin: 60px auto;
+    }
+
+    .reviews-img-wapper img {
+        width: 100px;
+        height: 100px;
+    }
+
+    
+    .end-section {
+        height:100%;
+    }
+
+    .end-container {
+        display: block;
+    }
+
+    .end-img-wraper {
+        width: 100%;
+        height: 60vw;
+        min-height: 40px;
+    }
+
+    footer {
+        padding: 14px;
+    }
+
+    footer p {
+        font-size: 12px;
+        margin: 10px 0 0;
+    }
+}
